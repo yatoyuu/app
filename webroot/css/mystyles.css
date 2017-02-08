@@ -1,0 +1,123 @@
+html{
+	width:100%;
+	height:100%;
+}
+body
+{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:0;
+	left:0;
+}
+header
+{
+	padding:20px;
+	font-size:48px;
+	line-height: 32px;
+	color:lightgreen;
+	width:100%;
+	text-shadow:5px 3px 2px #aaa;
+	height:100px;
+	font-weight:bold;
+	text-align:center;
+	background: url('../img/lgi01a201402231300.jpg') no-repeat;
+	background-position:50% 70%;
+}
+header span
+{
+	color :green;
+}
+#mycanvas
+{
+	z-index:-10;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.container{
+	margin-top:10px;
+	padding:0;
+}
+#side-left{
+	padding:0 10px 0 0;
+}
+#content-left{
+	border-radius: 15px;
+	padding: 10px;
+	background: #eee;
+	opacity:0.7;
+	box-shadow: 2px 2px 2px;
+}
+#side-left img
+{
+	
+	margin-right:10px;
+}
+#side-left ul
+{
+	padding-left:0;
+	list-style: none;
+}
+#main{
+	border-radius: 15px;
+	padding: 0 10px;
+	background: #eee;
+	opacity:0.9;
+	box-shadow: 2px 2px 2px;
+}
+.article
+{
+	background: white;
+	margin:0 0 10px 0;
+	padding:0 0 10px 0;
+	border-radius: 15px 15px 0 0/15px 15px 0 0;
+	box-shadow: 2px 2px 2px;
+}
+#article_title
+{
+	border-radius: 15px 15px 0 0/15px 15px 0 0;
+	color:white;
+	margin:0 0 10px 0;
+	text-align: center;
+	background:#39f;;
+}
+#article_category
+{
+	padding:0;
+	margin:0 10px;
+}
+#delete_article
+{
+	padding:0;
+	margin:0 10px;
+}
+#article_body
+{
+	margin:0 10px;
+}
+#side-right
+{
+	padding: 0 0 0 10px;
+}
+#content-right{
+	border-radius: 15px;
+	padding: 10px;
+	background: #eee;
+	opacity:0.7;
+	box-shadow: 2px 2px 2px;
+}
+#content-right ul{
+	list-style:none;
+}
+#delete_check
+{
+	padding:10px;
+	background:white;
+	border-radius: 15px;
+	box-shadow: 2px 2px 2px;
+}
