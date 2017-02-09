@@ -20,7 +20,7 @@
 
         $tmp_name = $image['tmp_name'];
         echo $tmp_name;
-        $dir = 'webroot/img/';
+        $dir = '/webroot/img/';
         $move_after = $dir.$file_name;
         move_uploaded_file($tmp_name,$move_after);
 
