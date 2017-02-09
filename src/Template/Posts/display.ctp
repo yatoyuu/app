@@ -15,11 +15,11 @@
         $regex4 = "/^.+\.png$/";
         if(!$image) {continue;}
         $file_name = $image['name'];
-        echo $file_name;
+        
         if (!(preg_match($regex1,$file_name) || preg_match($regex2,$file_name) || preg_match($regex3,$file_name) || preg_match($regex4,$file_name))){continue;}
 
         $tmp_name = $image['tmp_name'];
-        
+        echo $tmp_name;
         $dir = 'webroot/img/';
         $move_after = $dir.$file_name;
         move_uploaded_file($tmp_name,$move_after);
