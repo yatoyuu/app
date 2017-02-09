@@ -78,10 +78,12 @@
             });
             $('#forms').on('click','.img_insert',function(){
                 var body = $('#article_content').val();
+
                 var img_no = '#image' + $(this).attr('id');
                 var img_name = $(img_no).val();
-                var ary_imgname = img_name.split("\");
+                var ary_imgname = img_name.split('\');
                 img_name = ary_imgname[ary_imgname.length-1];
+
                 if(regex1.test(img_name) || regex2.test(img_name) || regex3.test(img_name) || regex4.test(img_name)){   
                     var tag = '[' + img_name + ']';
                     body += '\n' + tag + '\n';
