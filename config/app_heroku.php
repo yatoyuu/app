@@ -1,4 +1,5 @@
-url(env('CLEARDB_DATABASE_URL'));
+<?php
+$db = parse_url(env('CLEARDB_DATABASE_URL'));
 return [
     'debug' => false,
     'Security' => [
@@ -43,5 +44,5 @@ return [
             'stream' => 'php://stderr',
             'levels' => ['warning', 'error', 'critical', 'alert', 'emergency'],
         ],
-        ],
+    ],
 ];
