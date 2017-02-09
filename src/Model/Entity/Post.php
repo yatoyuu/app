@@ -8,10 +8,10 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $title
- * @property string $body
  * @property string $category
+ * @property string $body
  * @property \Cake\I18n\Time $created
- * @property \Cake\I18n\Time $modified
+ * @property \Cake\I18n\Time $modidied
  */
 class Post extends Entity
 {

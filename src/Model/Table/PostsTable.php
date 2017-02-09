@@ -55,10 +55,14 @@ class PostsTable extends Table
             ->allowEmpty('title');
 
         $validator
+            ->allowEmpty('category');
+
+        $validator
             ->allowEmpty('body');
 
         $validator
-            ->allowEmpty('category');
+            ->dateTime('modidied')
+            ->allowEmpty('modidied');
 
         return $validator;
     }

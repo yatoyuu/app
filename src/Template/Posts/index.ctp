@@ -51,7 +51,9 @@
 	       <div>カテゴリー一覧</div>
 	       <ul>
 	       <?php foreach($categorys as $category) : ?>
+	       	<?php if($category[0] == "") {continue;} ?>
 	       		<li><?=  "<a href= /posts/catelist/".$category[0].">";?><i class= "glyphicon glyphicon-pencil"><?= $category[0];?></i></a></li>
+	       	
 	       	<?php endforeach?>
 	       </ul>
 	       
