@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 src/Template/Posts/
+web: vendor/bin/heroku-php-apache2 webroot/
