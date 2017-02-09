@@ -80,7 +80,9 @@ try {
 } catch (\Exception $e) {
     exit($e->getMessage() . "\n");
 }
-
+if (isset($_ENV['CAKE_ENV'])) {
+    Configure::load('app_' . $_ENV['CAKE_ENV'], 'default');
+}
 /*
  * Load an environment local configuration file.
  * You can use a file like app_local.php to provide local overrides to your
@@ -219,7 +221,7 @@ Type::build('timestamp')
  * Only try to load DebugKit in development mode
  * Debug Kit should not be installed on a production system
  */
-if (Configure::read('debug')) {
+if (Configure::read('debug') && !isset($_ENV['CAKE_ENV'])) {
     Plugin::load('DebugKit', ['bootstrap' => true]);
 }
 Plugin::load('Bootstrap');
