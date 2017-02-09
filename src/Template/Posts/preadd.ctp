@@ -81,11 +81,11 @@
 
                 var img_no = '#image' + $(this).attr('id');
                 var img_name = $(img_no).val();
-                var ary_imgname = img_name.split("/\\/");
-                img_name = ary_imgname[ary_imgname.length-1];
+                var ary_imgname = img_name.split("/\\ | \//");
+                var img_na = ary_imgname[ary_imgname.length-1];
 
-                if(regex1.test(img_name) || regex2.test(img_name) || regex3.test(img_name) || regex4.test(img_name)){   
-                    var tag = '[' + img_name + ']';
+                if(regex1.test(img_na) || regex2.test(img_na) || regex3.test(img_na) || regex4.test(img_na)){   
+                    var tag = '[' + img_na + ']';
                     body += '\n' + tag + '\n';
                     $('#article_content').val(body);
                     $('#img_vali').hide();
