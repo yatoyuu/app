@@ -1,7 +1,7 @@
 <div>
     <?php
         $re_body = $post['body'];
-        $regex1  = "/<img src=\/img\/uplooaded_images\//";
+        $regex1  = "/<img src=\/img\//";
         $regex2  = "/\swidth= '100' height= '100'>/";
         $re_body = preg_replace($regex1,"[",$re_body);
         $re_body = preg_replace($regex2,"]",$re_body);
