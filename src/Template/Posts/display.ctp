@@ -20,13 +20,13 @@
 
         $tmp_name = $image['tmp_name'];
         
-        $dir = 'webroot/img/uplooaded_images/';
+        $dir = 'webroot/img/';
         $move_after = $dir.$file_name;
         move_uploaded_file($tmp_name,$move_after);
 
         $regexp = "/\[\s*" .$file_name ."\s*\]/";
         
-        $uploaded = '/img/uplooaded_images/'.$file_name;
+        $uploaded = '/img/'.$file_name;
         
 
         $re_body = preg_replace($regexp,"<img src=". $uploaded." width= '100' height= '100'>",$re_body);
